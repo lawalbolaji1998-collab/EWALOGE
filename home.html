@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Everything Fashion</title>
+    </header>
+    <link rel="stylesheet" href="home.css">
+    <body>
+        <head>
+            <!--Top bar-->
+
+          <div class="top-bar">
+            <span>SHIPPING IS FREE</span> 
+            <span>NEED HELP:+2348101845564</span>
+          </div>
+            
+        </head>
+          <!--navbar-->>
+          <nav>
+            <div class="logo">EWALOGE</div>
+          <ul>
+            <li><a href="Aboutus.html">About us</a></li>
+           <li><a href="limited.html"> limited Edition</a></li> 
+           <li><a href="catalog.html">Catalog</a></li> 
+           <li><a href="contact.html">contacts</a></li> 
+          </ul>
+            
+         </nav>
+         <div class="icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+         </div>
+         
+         <!---->
+         <section class="hero">
+          <div class="overlay"></div>
+            <div class="left-section">
+            <div class="small-title"><span>//Fashion Store</span></div>
+            <h1>BEAUTY<br>STYLE<br>CONFIDENCE<br>ELEGANCE</h1>
+            <p class="description">Discover Stylish Fashion that brings confidence and elegance together</p>
+            <a href="ewa.html"><button>learn More</button></a>
+         </div>
+        
+        </section>
+        <script>
+          const hero = document.querySelector(".hero");
+
+              const backgrounds = [
+             "my images/top2.jpg",
+             "my images/top3.jpg",
+             "my images/top5.jpg"
+           ];
+
+         let current = 0;
+
+           setInterval(() => {
+            current = (current + 1) % backgrounds.length;
+
+             hero.style.backgroundImage =
+                 `url('${backgrounds[current]}')`;
+             }, 3000);
+        </script>
+        
+
+         
+
+
+
+    </body>
+</html>
